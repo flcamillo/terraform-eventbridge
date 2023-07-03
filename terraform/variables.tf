@@ -6,12 +6,12 @@ variable "bus_name" {
 
 variable "bucket_name" {
   type        = string
-  description = "Nome da policy para a lambda"
-  default     = "policy-lambda-api-user"
+  description = "Nome do bucket S3 que será criado e habilitado para envio de notificações para o EventBridge"
+  default     = "flc-receive"
 }
 
-variable "bucket_prefixes" {
-  type        = list(string)
-  description = "Lista de identificação de subnets para a lambda poder usar a VPC"
-  default     = ["AA/", "BB/"]
+variable "sns_name" {
+  type        = string
+  description = "Nome do tópico SNS para enviar as mensagens filtradas pelo EventBridge"
+  default     = "s3-events"
 }

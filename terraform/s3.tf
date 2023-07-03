@@ -1,6 +1,6 @@
 # cria um bucket s3 para teste de recebimento de arquivo
 resource "aws_s3_bucket" "bucket" {
-  bucket = "flc-receive"
+  bucket = var.bucket_name
 }
 
 # bloqueia o acesso publico ao bucket de recepção

@@ -1,4 +1,5 @@
-# cria um bus para no event bridge
+# cria um bus para o event bridge caso não seja usado o default
 resource "aws_cloudwatch_event_bus" "bus" {
-  name = "s3-events"
+  count = var.bus_name != "default" ? 1 : 0
+  name = var.bus_name
 }

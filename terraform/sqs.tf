@@ -46,7 +46,7 @@ resource "aws_sns_topic_subscription" "sqs1_sub" {
   filter_policy = jsonencode({
     detail = {
       bucket = {
-        name = [{ "prefix" : "flc-receive" }]
+        name = [{ "prefix" : "${var.bucket_name}" }]
       }
       object = {
         key = [{ "prefix" : "AA/" }]
@@ -103,7 +103,7 @@ resource "aws_sns_topic_subscription" "sqs2_sub" {
   filter_policy = jsonencode({
     detail = {
       bucket = {
-        name = [{ "prefix" : "flc-receive" }]
+        name = [{ "prefix" : "${var.bucket_name}" }]
       }
       object = {
         key = [{ "prefix" : "BB/" }]

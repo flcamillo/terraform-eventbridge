@@ -1,6 +1,6 @@
 # cria o tópico sns para receber as mensagens do event bridge
 resource "aws_sns_topic" "sns_s3_events" {
-  name = "s3-events"
+  name = var.sns_name
 }
 
 # define a policy para uso do tópico sns permitindo apenas 

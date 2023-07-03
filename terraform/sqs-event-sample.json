@@ -1,0 +1,11 @@
+{
+    "Type": "Notification",
+    "MessageId": "53414375-79cb-5f4b-b9ea-1e69b3baf4e7",
+    "TopicArn": "arn:aws:sns:sa-east-1:123456789012:s3-events",
+    "Message": "{\"version\":\"0\",\"id\":\"17793124-05d4-b198-2fde-7ededc63b103\",\"detail-type\":\"ObjectCreated\",\"source\":\"aws.s3\",\"account\":\"123456789012\",\"time\":\"2021-11-12T00:00:00Z\",\"region\":\"ca-central-1\",\"resources\":[\"arn:aws:s3:::DOC-EXAMPLE-BUCKET1\"],\"detail\":{\"version\":\"0\",\"bucket\":{\"name\":\"DOC-EXAMPLE-BUCKET1\"},\"object\":{\"key\":\"example-key\",\"size\":5,\"etag\":\"b1946ac92492d2347c6235b4d2611184\",\"version-id\":\"IYV3p45BT0ac8hjHg1houSdS1a.Mro8e\",\"sequencer\":\"617f08299329d189\"},\"request-id\":\"N4N7GDK58NMKJ12R\",\"requester\":\"123456789012\",\"source-ip-address\":\"1.2.3.4\",\"reason\":\"PutObject\"}}",
+    "Timestamp": "2023-07-03T13:08:01.022Z",
+    "SignatureVersion": "1",
+    "Signature": "LcrKMaWszaZ2w2Lpmfu7jU5BAZdyfI/Us8on8GuRTY0NvzfMFRO/MCmI28th9FQ7fl4dDguKYVdyfhPf0CfyI3iTdWyjVigcoPl0BMaP9ZLVE3aogbiD2qpfxAm+I6cmwSmvUyulUGQiOnQqQSkh+YLO1UoYvoprrkuCEkDzMn9HhsUatp1T0AuTwqmqoFtkE3pnVMuyM962vJFXSJVI4VPG7FvyuBP92bRDVWmvO9ip3/ilyWdLGLTh/CCusMcJga5ngmCZy9z6cSUzwlQGmkfxt79HyAZik9HxL0MCo3mNIYXkfDDKzFdEEs3ZnHMVhC5FDvskQa8fTrSw0FEDIQ==",
+    "SigningCertURL": "https://sns.sa-east-1.amazonaws.com/SimpleNotificationService-123456789012.pem",
+    "UnsubscribeURL": "https://sns.sa-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:sa-east-1:123456789012:s3-events:1db70134-992c-4302-b54f-96bd08bc421d"
+}
